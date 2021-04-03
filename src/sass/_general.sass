@@ -11,13 +11,17 @@
 .slider, .slider2
     margin-top: 60px
     height: 600px
+    transition: all 0.5s
+    &:hover
+        transform: scale(1.01)
     &_item
         position: relative
         display: block
         height: 540px
+        transition: all 1s 
         &_img
             display: block
-            width: 100%
+            width: 100%    
         &_title
             position: absolute
             bottom: 0
@@ -54,9 +58,9 @@
             border-radius: 100%
             border: none
             cursor: pointer
+            transition: all 0.5s
             &:hover
                 background: rgba(29,156,216, .7)
-                transition-duration: 0.2s
             &:last-child
                 margin-right: 0
                 
@@ -73,7 +77,32 @@
     span
         color: $third-color
         font-size: 150px
+.mt
+    display: block
+    margin-top: 15px
+.list
+    margin-top: 60px
+    display: flex
+    justify-content: space-between
+    height: 600px
+    &_text
+        padding-top: 60px
+        width: 200px
+        &_ref
+            font-size: 20px
+            font-weight: 600
+            color: $main-color
+            text-decoration: none
+            &:hover
+                color: rgba(0,0,0, .7)
+                transition-duration: 0.2s
+    &_block
+        max-width: 600px
+        max-height: 600px
+        &_img
+            width: 100%
 .footer
+    margin-top: 60px
     height: 299px
     &_info
         display: flex
