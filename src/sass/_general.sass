@@ -10,24 +10,23 @@
 
 .slider, .slider2
     margin-top: 60px
-    height: 600px
     transition: all 0.5s
     &:hover
         transform: scale(1.01)
     &_item
         position: relative
         display: block
-        height: 540px
         transition: all 1s 
-        &_img
+        &_img, &_img2
             display: block
             width: 100%    
-        &_title
+        &_title, &_title2
             position: absolute
+            width: 600px
             bottom: 0
-            font-weight: 600
             font-size: 40px
-            padding: 10px 60px
+            display: inline
+            padding-left: 60px 
             span
                 color: $main-color
                 font-weight: 600
@@ -39,7 +38,7 @@
             background: rgba(29,156,216, .7)
             transition-duration: 1s
             cursor: pointer
-        &_text
+        &_text, &_text2
             color: $third-color
             font-weight: 600
             font-size: 20px
@@ -80,6 +79,8 @@
 .mt
     display: block
     margin-top: 15px
+.blue
+    color: $main-color
 .list
     margin-top: 60px
     display: flex
@@ -119,9 +120,6 @@
             margin-top: 10px
             font-size: 14px
             text-decoration: none
-        &_contact
-            &_tel
-                font-size: 27px
     &_wrapper_1
         display: flex 
         justify-content: space-between
